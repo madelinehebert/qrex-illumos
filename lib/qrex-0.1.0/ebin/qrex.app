@@ -1,0 +1,12 @@
+{application,qrex,
+             [{config_mtime,1741886653},
+              {compile_env,[{qrex,['Elixir.QRex'],error},
+                            {rustler_precompiled,[force_build,qrex],error},
+                            {rustler_precompiled,[force_build_all],error}]},
+              {optional_applications,[rustler]},
+              {applications,[kernel,stdlib,elixir,logger,rustler_precompiled,
+                             rustler]},
+              {description,"QR code detector and decoder"},
+              {modules,['Elixir.QRex','Elixir.QRex.QRCode']},
+              {registered,[]},
+              {vsn,"0.1.0"}]}.
